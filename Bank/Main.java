@@ -11,6 +11,8 @@ public class Main {
         // 出金処理
         account.withdraw(3000);
         // エラー確認
+        // 履歴取得
+        
         try {
             // 不正な入金処理（マイナスの値）
             account.deposit(-1000);
