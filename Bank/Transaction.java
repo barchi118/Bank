@@ -1,5 +1,6 @@
 package Bank;
 
+// 取引クラス
 public class Transaction {
     // 取引ID
     private String transactionId;

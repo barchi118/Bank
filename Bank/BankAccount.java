@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
+// 銀行口座クラス
 public class BankAccount {
     // 口座番号
     private String accountNumber;
@@ -36,7 +37,7 @@ public class BankAccount {
     }
 
     // 入金ロジック
-    public void deposit(int amount) {
+    public void deposit(double amount) {
         // 「不正な値」をブロックするロジック
         if (amount < 0) {
             throw new IllegalArgumentException("マイナスの入金はできません");
@@ -52,7 +53,7 @@ public class BankAccount {
     }
 
     // 出金ロジック
-    public void withdraw(int amount) {
+    public void withdraw(double amount) {
         // 「不正な値」をブロックするロジック
         if (amount < 0) {
             throw new IllegalArgumentException("マイナスの出金はできません");
